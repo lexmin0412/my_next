@@ -1,5 +1,11 @@
 // next.config.js
 const withLess = require('@zeit/next-less')
+
+const isProd = process.env.NODE_ENV === 'production'
+
 module.exports = withLess({
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/my_next' : '',
+  assetPrefix: isProd ? '/my_next' : '',
+  publicRuntimeConfig: {
+    linkPrefix: isProd ? '/my_next' : ''
+  }
 })
