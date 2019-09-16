@@ -1,6 +1,6 @@
 export default () => {
   return (
-    <div>Welcome to test.js!</div>
+    <div>Welcome to test!</div>
   )
 }
   
