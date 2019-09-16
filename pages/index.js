@@ -6,7 +6,7 @@ export default () =>
     <Head>
       <title>My page title</title>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <base href="/my_next" />
+      {/* <base href="/my_next" /> */}
     </Head>
     <style jsx>{`
     p {
