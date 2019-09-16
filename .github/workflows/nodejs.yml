@@ -37,7 +37,7 @@ jobs:
       run: |
         npm run build
         npm run export
-    - name: 进入out文件夹 准备提交代码
+    - name: 进入out文件夹 部署
       run: |
         echo 'cd out/ 进入out文件夹'
         cd out/
@@ -56,4 +56,4 @@ jobs:
 
         echo 'git push'
         # 这里的secret.PWD是在github-repo-settings中添加的secret(如果是这种需要每个repo都加一个secret)  如果写成secrets.GITHUB_TOKEN 或者github密码(泄露个人信息，一般不用) 所有repo都可以用
-        git push -f https://${{ secrets.USER_NAME }}:${{ secrets.USER_PWD }}@github.com/${{ secrets.USER_NAME }}/my_next.git HEAD:gh-pages
+        git push -f https://${{ secrets.USER_NAME }}:${{ secrets.USER_PWD }}@github.com/${{ secrets.USER_NAME }}/my_next.git HEAD:master
