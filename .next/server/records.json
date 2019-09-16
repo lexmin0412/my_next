@@ -17,34 +17,19 @@
   },
   "chunks": {
     "byName": {
-      "static/STqsd5I4i2xMXVtvfmIHF/pages/_app.js": 0,
-      "static/STqsd5I4i2xMXVtvfmIHF/pages/_document.js": 1,
-      "static/STqsd5I4i2xMXVtvfmIHF/pages/_error.js": 2,
-      "static/STqsd5I4i2xMXVtvfmIHF/pages/index.js": 3,
-      "static/STqsd5I4i2xMXVtvfmIHF/pages/test.js": 4,
-      "static/PfJLxFiDltsjJe74ihJTP/pages/_app.js": 5,
-      "static/PfJLxFiDltsjJe74ihJTP/pages/_document.js": 6,
-      "static/PfJLxFiDltsjJe74ihJTP/pages/_error.js": 7,
-      "static/PfJLxFiDltsjJe74ihJTP/pages/index.js": 8,
-      "static/PfJLxFiDltsjJe74ihJTP/pages/test.js": 9,
-      "static/EgohW3_LZ86GVc8dAZCH5/pages/_app.js": 0,
-      "static/EgohW3_LZ86GVc8dAZCH5/pages/_document.js": 1,
-      "static/EgohW3_LZ86GVc8dAZCH5/pages/_error.js": 2,
-      "static/EgohW3_LZ86GVc8dAZCH5/pages/index.js": 3,
-      "static/EgohW3_LZ86GVc8dAZCH5/pages/test.js": 4,
-      "static/gdueX1qvDMd62T8yLdCeY/pages/_app.js": 5,
-      "static/gdueX1qvDMd62T8yLdCeY/pages/_document.js": 6,
-      "static/gdueX1qvDMd62T8yLdCeY/pages/_error.js": 7,
-      "static/gdueX1qvDMd62T8yLdCeY/pages/index.js": 8,
-      "static/gdueX1qvDMd62T8yLdCeY/pages/test.js": 9
+      "static/8pHEleWbFXIg3i-CGuiwz/pages/_app.js": 0,
+      "static/8pHEleWbFXIg3i-CGuiwz/pages/_document.js": 1,
+      "static/8pHEleWbFXIg3i-CGuiwz/pages/_error.js": 2,
+      "static/8pHEleWbFXIg3i-CGuiwz/pages/index.js": 3,
+      "static/8pHEleWbFXIg3i-CGuiwz/pages/test.js": 4
     },
     "bySource": {},
     "usedIds": [
-      5,
-      6,
-      7,
-      8,
-      9
+      0,
+      1,
+      2,
+      3,
+      4
     ]
   }
 }
