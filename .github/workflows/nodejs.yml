@@ -42,6 +42,9 @@ jobs:
         echo 'cd out/ 进入out文件夹'
         cd out/
 
+        echo 'git init'
+        git init
+
         echo '查看out文件夹下的文件'
         ls
 
