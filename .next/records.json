@@ -1,0 +1,62 @@
+{
+  "mini-css-extract-plugin node_modules/css-loader/index.js??ref--5-1!node_modules/less-loader/dist/cjs.js??ref--5-2!pages/index.less": [
+    {
+      "modules": {
+        "byIdentifier": {},
+        "usedIds": {}
+      },
+      "chunks": {
+        "byName": {
+          "mini-css-extract-plugin": 0
+        },
+        "bySource": {},
+        "usedIds": [
+          0
+        ]
+      }
+    }
+  ],
+  "modules": {
+    "byIdentifier": {
+      "css node_modules/css-loader/index.js??ref--5-1!node_modules/less-loader/dist/cjs.js??ref--5-2!pages/index.less 0": 0
+    },
+    "usedIds": {
+      "0": 0
+    }
+  },
+  "chunks": {
+    "byName": {
+      "commons": 0,
+      "static/runtime/webpack.js": 1,
+      "static/STqsd5I4i2xMXVtvfmIHF/pages/_app.js": 2,
+      "static/STqsd5I4i2xMXVtvfmIHF/pages/_error.js": 3,
+      "static/STqsd5I4i2xMXVtvfmIHF/pages/index.js": 4,
+      "static/STqsd5I4i2xMXVtvfmIHF/pages/test.js": 5,
+      "static/runtime/main.js": 6,
+      "styles": 7,
+      "static/PfJLxFiDltsjJe74ihJTP/pages/_app.js": 8,
+      "static/PfJLxFiDltsjJe74ihJTP/pages/_error.js": 9,
+      "static/PfJLxFiDltsjJe74ihJTP/pages/index.js": 10,
+      "static/PfJLxFiDltsjJe74ihJTP/pages/test.js": 11,
+      "static/EgohW3_LZ86GVc8dAZCH5/pages/_app.js": 2,
+      "static/EgohW3_LZ86GVc8dAZCH5/pages/_error.js": 3,
+      "static/EgohW3_LZ86GVc8dAZCH5/pages/index.js": 4,
+      "static/EgohW3_LZ86GVc8dAZCH5/pages/test.js": 5,
+      "static/gdueX1qvDMd62T8yLdCeY/pages/_app.js": 8,
+      "static/gdueX1qvDMd62T8yLdCeY/pages/_error.js": 9,
+      "static/gdueX1qvDMd62T8yLdCeY/pages/index.js": 10,
+      "static/gdueX1qvDMd62T8yLdCeY/pages/test.js": 11
+    },
+    "bySource": {},
+    "usedIds": [
+      0,
+      1,
+      10,
+      11,
+      6,
+      7,
+      8,
+      9
+    ]
+  }
+}

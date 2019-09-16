@@ -1,0 +1,59 @@
+# 自动构建脚本
+
+name: Node CI
+
+# 指定触发action的事件
+on:
+  # 指定触发事件
+  push:
+    # 指定触发指定事件的分支 仅master触发
+    branches:
+      - development
+jobs:
+  # job_id
+  build:
+
+    # 指定运行虚拟机
+    runs-on: ubuntu-latest
+
+    # 构建矩阵
+    strategy:
+      matrix:
+        node-version: [10.x]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ strategy.matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ strategy.matrix.node-version }}
+    - name: 执行npm install
+      run: |
+        npm install
+      env:
+        CI: true
+    # 此步骤根据package.json中的script打包脚本而定
+    - name: 执行npm run build:h5
+      run: |
+        npm run build
+        npm run export
+    - name: 进入out文件夹 准备提交代码
+      run: |
+        echo 'cd out/ 进入out文件夹'
+        cd out/
+
+        echo 'git config --global user.name 设置用户名'
+        git config --global user.name ${{ secrets.USER_NAME }}
+
+        echo 'git config --global user.email 设置邮箱'
+        git config --global user.email ${{ secrets.USER_EMAIL }}
+
+        echo 'git add .'
+        git add .
+
+        echo 'git commit -m "deploy"'
+        git commit -m 'deploy'
+
+        echo 'git push'
+        # 这里的secret.PWD是在github-repo-settings中添加的secret(如果是这种需要每个repo都加一个secret)  如果写成secrets.GITHUB_TOKEN 或者github密码(泄露个人信息，一般不用) 所有repo都可以用
+        git push -f https://${{ secrets.USER_NAME }}:${{ secrets.USER_PWD }}@github.com/${{ secrets.USER_NAME }}/my_next.git HEAD:master:gh-pages
