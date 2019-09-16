@@ -42,6 +42,9 @@ jobs:
         echo 'cd out/ 进入out文件夹'
         cd out/
 
+        echo '查看out文件夹下的文件'
+        ls
+
         echo 'git config --global user.name 设置用户名'
         git config --global user.name ${{ secrets.USER_NAME }}
 
